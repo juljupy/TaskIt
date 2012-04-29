@@ -42,6 +42,7 @@
 		android:configChanges="orientation|keyboardHidden">
 		<intent-filter> </intent-filter>
 		</activity>
+		<receiver android:name=".TimerBroadcastReceiver" android:enabled="true"/>
     </application>
 
 </manifest>

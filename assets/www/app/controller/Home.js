@@ -25,7 +25,7 @@ Ext.define("TaskIt.controller.Home",{
                 minValue: 10
 			},
 			fn      : function(btn,num) {
-				window.MyCls.showToast("Alarma!!!! en acci—n!!!",num);
+				window.MyCls.showToast("Alarma!!!!",num);
 			}
 		});
 	},

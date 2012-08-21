@@ -11,5 +11,11 @@ Ext.define('TaskIt.view.Contacts',{
         grouped         : true,
         onItemDisclosure: true,
         indexBar        : true
+	},
+	
+	initialize : function(){
+		this.getStore().load();
+		this.callParent();
 	}
+	
 });

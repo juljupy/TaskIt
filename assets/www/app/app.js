@@ -13,4 +13,5 @@ var task = function(){
 	    }
 	});
 }
+
 document.addEventListener("deviceready", task, true);

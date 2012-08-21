@@ -5,11 +5,16 @@ Ext.define('TaskIt.view.ContactsDetail',{
         title           : 'Detalles',
         styleHtmlContent: true,
         scrollable      : 'vertical',
+        
         tpl: [
-            '<h1>Hello {displayName}!</h1>',
-            '<h2>Detalles:</h2>',
-            '<hr />',
-            '<tpl for="numbers">Tipo: {type}<br />Valor: {phone}</tpl>'
+			'<h4>Phone</h4>',
+			'<tpl for="phoneNumbers">',
+			    '<div class="field"><span class="label">{type}: </span><a href="tel:{value}">{value}</a></div>',
+			'</tpl>',
+			'<h4>Email</h4>',
+		    '<tpl for="emails">',
+		        '<div class="field"><span class="label">{type}: </span><a href="mailto:{value}">{value}</a></div>',
+		    '</tpl>'
         ]
     }
 });

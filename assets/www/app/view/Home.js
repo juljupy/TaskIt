@@ -14,26 +14,10 @@ Ext.define("TaskIt.view.Home",{
             items : [
                 {
                 	text    : 'Operador',
-                	action  : 'opera'/*
-                	handler : function(){
-                		alert('Mi Operador: '+window.MyCls.getTelephoneNumber()); //Ejecución del método getTelephoneNumber de objeto MyCls creado en Java
-                	}*/
+                	action  : 'opera'
                 },{
                 	text    : 'Alarma',
-                	action  : 'alarm'/*,
-                	handler : function(){
-                		Ext.Msg.show({
-                			title   : 'Alarma',
-                			message : 'Indique el tiempo en segundos:',
-                			prompt  : {
-                			    xtype   : 'numberfield',
-                                minValue: 10
-                			},
-                			fn      : function(btn,num) {
-                				window.MyCls.showToast("Alarma!!!!",num);
-                			}
-                		});
-                	}*/
+                	action  : 'alarm'
                 }
             ]
         }],

@@ -18,6 +18,9 @@ Ext.define("TaskIt.view.Home",{
                 },{
                 	text    : 'Alarma',
                 	action  : 'alarm'
+                },{
+                	text    : 'Geoposicion',
+                	action  : 'geopos'
                 }
             ]
         }],

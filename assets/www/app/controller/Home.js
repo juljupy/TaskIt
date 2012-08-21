@@ -4,7 +4,8 @@ Ext.define("TaskIt.controller.Home",{
 	config : {
 		refs    : {
 			alarmBtn : 'homepanel toolbar button[action=alarm]',
-			operaBtn : 'homepanel toolbar button[action=opera]'
+			operaBtn : 'homepanel toolbar button[action=opera]',
+			positBtn : 'homepanel toolbar button[action=geopos]'
 		},
 		control : {
 			alarmBtn : {
@@ -12,6 +13,9 @@ Ext.define("TaskIt.controller.Home",{
 			},
 			operaBtn : {
 				tap : 'getOperator'
+			},
+			positBtn: {
+				tap : 'getPosition'
 			}
 		}
 	},
@@ -32,6 +36,15 @@ Ext.define("TaskIt.controller.Home",{
 	
 	getOperator : function(){
 		alert('Mi Operador: '+window.MyCls.getTelephoneNumber()); //Ejecución del método getTelephoneNumber de objeto MyCls creado en Java
+	},
+	
+	getPosition : function(){
+		alert('Cargar Geoposition');
+		navigator.geolocation.getCurrentPosition(function(position){
+			alert('Latitude: '+ position.coords.latitude+'- Longitude: '+ position.coords.longitude+'- Altitude: '+ position.coords.altitude+'- Timestamp: '+ new Date(position.timestamp));
+		}, function(error){
+			alert('code: '+ error.code+ '\n' + 'message: '+ error.message + '\n');
+		});
 	}
 	
 });

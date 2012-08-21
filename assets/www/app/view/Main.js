@@ -8,6 +8,8 @@ Ext.define("TaskIt.view.Main",{
 			xtype : 'homepanel'
 		},{
 			xtype : 'contactlist'
+		},{
+			xtype : 'positionmap'
 		}]
 	}
 });

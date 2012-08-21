@@ -4,9 +4,9 @@ var task = function(){
 	Ext.application({
 	    name        : 'TaskIt',
 	    requires    : ['Ext.MessageBox'],
-	    views       : ['Main','Home','Contacts','ContactList'],
+	    views       : ['Main','Home','Contacts','ContactList','Position'],
 	    stores      : ['Contacts'],
-	    controllers : ['Home','Contacts'],
+	    controllers : ['Home','Contacts','Position'],
 	    models      : ['Contacts'],
 	    launch      : function() {
 	    	Ext.Viewport.add(Ext.create('TaskIt.view.Main'));
